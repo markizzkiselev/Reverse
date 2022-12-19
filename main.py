@@ -19,7 +19,8 @@ if __name__ == '__main__':
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if event.button == 1:
                     bird_pos = event.pos
-                    board.turn([bird_pos[0] // CELL_SIZE, bird_pos[1] // CELL_SIZE])
+                    board.turn([bird_pos[0] // CELL_SIZE,
+                                bird_pos[1] // CELL_SIZE])
                     board.draw_map()
                     pygame.display.flip()
                     pygame.display.update()
